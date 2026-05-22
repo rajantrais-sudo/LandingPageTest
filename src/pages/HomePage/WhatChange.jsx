@@ -1,3 +1,4 @@
+import { Mountain, Shirt, SunDim, VibrateOff } from "lucide-react";
 import SectionHeading from "../../components/SectionHeading";
 
 
@@ -7,7 +8,7 @@ const cardData = [
     badge: "WEEKS 1–4",
     description:
       "Most patients notice the constant background hunger fade within the first two weeks. Snacking stops being a default.",
-    icon: "",
+    icon: <VibrateOff/>,
   },
 
   {
@@ -15,7 +16,7 @@ const cardData = [
     badge: "MONTHS 2–3",
     description:
       "You’re usually down one to two sizes. The jeans in the back of your closet. The button-down that hasn’t buttoned in three years.",
-    icon: "",
+    icon: <Shirt/>,
   },
 
   {
@@ -23,7 +24,7 @@ const cardData = [
     badge: "MONTHS 4–6",
     description:
       "Stairs without the breath. Mornings without the fog. Patients commonly report better sleep apnea, better A1C, and blood pressure that finally lets the cuff click off.",
-    icon: "",
+    icon: <SunDim/>,
   },
 
   {
@@ -31,7 +32,7 @@ const cardData = [
     badge: "MONTHS 6–12",
     description:
       "With your provider, you taper the dose and lock in the habits — strength training, protein, sleep — that hold the weight off after the medication.",
-    icon: "",
+    icon: <Mountain/>,
   },
 ];
 
@@ -52,26 +53,32 @@ const WhatChangesSection = () => {
         {cardData.map((item, index) => (
           <div
             key={index}
-            className="bg-white rounded-3xl border border-gray-200 p-8"
+            className="bg-white rounded-3xl border border-gray-200 p-8 flex gap-4" 
           >
             
-            
-            <div className="w-14 h-14 rounded-2xl bg-[#EEF3FF] flex items-center justify-center text-2xl">
+            <div className=" items-baseline">
+              <div className="w-14 h-14 rounded-2xl bg-[#EEF3FF] flex items-center justify-center text-2xl">
               {item.icon}
             </div>
 
+
+            </div>
             
-            <p className="text-[#3D5AFE] text-xs font-bold tracking-[2px] mt-6">
+
+            <div>
+              <p className="text-[#3D5AFE] text-xs font-bold tracking-[2px] ">
               {item.badge}
             </p>
 
            
-            <h3 className="text-[#001A57] text-2xl font-bold mt-3 leading-snug">
+            <h3 className="text-[#001A57] text-2xl font-bold mt-2 leading-snug">
               {item.title}
             </h3>
-            <p className="text-gray-500 leading-7 mt-4">
+            <p className="text-gray-500 leading-7 mt-2">
               {item.description}
             </p>
+              </div>
+            
           </div>
         ))}
       </div>

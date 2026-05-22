@@ -150,7 +150,7 @@ const Items = () => {
 
                   <div className="bg-white rounded-2xl p-5 flex flex-col items-center">
                     
-                    <div className="w-8 h-12 bg-[#F3C14D] rounded-md"></div>
+                    <div className="w-8 h-12 bg-[#F3C14D] rounded-b-md rounded-t-sm"></div>
 
                     <p className="text-xs text-gray-500 mt-4">
                       B12

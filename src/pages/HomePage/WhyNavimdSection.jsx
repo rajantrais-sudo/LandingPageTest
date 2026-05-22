@@ -1,5 +1,5 @@
 
-import { Check } from "lucide-react";
+import { Check, Cross, X } from "lucide-react";
 import SectionHeading from "../../components/SectionHeading";
 
 const data = [
@@ -12,7 +12,7 @@ const data = [
   {
     feature: "FDA-approved medication",
     navio: <Check/>,
-    other: "✕",
+    other: <X/>,
   },
 
   {
@@ -110,8 +110,10 @@ const WhyNavimdSection = () => {
             </div>
 
           
-            <div className="p-6 text-center text-gray-500">
+            <div className="p-6 text-center text-gray-500 flex justify-center">
+               <span className="font-bold text-center">
               {item.other}
+               </span>
             </div>
 
           </div>

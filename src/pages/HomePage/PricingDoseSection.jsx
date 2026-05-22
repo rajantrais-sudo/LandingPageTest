@@ -117,7 +117,7 @@ const PricingDoseSection = () => {
             </div>
 
             <p
-              className={`leading-7 mt-5 ${
+              className={`leading-7 mt-2 ${
                 plan.dark
                   ? "text-blue-100"
                   : "text-gray-500"
@@ -127,7 +127,7 @@ const PricingDoseSection = () => {
             </p>
 
          
-            <div className="space-y-4 mt-8">
+            <div className="space-y-4 mt-3">
 
               {plan.features.map((feature, i) => (
                 <div
@@ -135,7 +135,7 @@ const PricingDoseSection = () => {
                   className="flex items-start gap-3"
                 >
                   <span
-                    className={`mt-1 ${
+                    className={` ${
                       plan.dark
                         ? "text-[#4DFFAF]"
                         : "text-[#163B91]"
@@ -160,7 +160,7 @@ const PricingDoseSection = () => {
 
            
             <button
-              className={`w-full mt-10 py-4 rounded-full font-semibold transition-all ${
+              className={`w-full mt-8 py-4 rounded-full font-semibold transition-all ${
                 plan.dark
                   ? "bg-white text-[#001A57] hover:bg-gray-100"
                   : "bg-[#2647A5] text-white hover:bg-[#18357E]"

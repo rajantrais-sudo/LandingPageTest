@@ -1,5 +1,6 @@
 // App.jsx
 
+import { Phone } from "lucide-react";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage/HeroSections";
 
@@ -16,7 +17,7 @@ function App() {
 
     
       <nav className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           
          
           <div className="flex items-center gap-2">
@@ -29,11 +30,18 @@ function App() {
 
           
           <div className="flex items-center gap-6">
-            <p className="text-gray-600 hidden md:block">
-              + (91) 7878787878
-            </p>
 
-            <button className="bg-[#163B91] hover:bg-[#0F2D74] transition-all text-white px-6 py-3 rounded-full font-medium">
+            <div className=" gap-2 hidden md:flex justify-center items-center">
+
+              <span>
+                <Phone size={20}/>
+              </span>
+            <p className="text-gray-600  ">
+               (91) 7878787878
+            </p>
+            </div>
+
+            <button className="bg-[#163B91] hover:bg-[#0F2D74] transition-all text-white px-5 py-2 rounded-full font-medium">
               Get started →
             </button>
           </div>

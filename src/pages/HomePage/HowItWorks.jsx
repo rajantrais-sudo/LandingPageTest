@@ -1,3 +1,4 @@
+import { Box, NotepadText, Stethoscope } from "lucide-react";
 import SectionHeading from "../../components/SectionHeading";
 
 
@@ -8,7 +9,7 @@ const steps = [
     description:
       "5-minute health questionnaire. Medical history, current medications, weight goals. No insurance card needed.",
     badge: "5 minutes",
-    icon: "",
+    icon: <NotepadText/>,
   },
 
   {
@@ -17,7 +18,7 @@ const steps = [
     description:
       "A U.S.-licensed clinician evaluates your profile and, if Zepbound is right for you, writes your prescription.",
     badge: "Same day",
-    icon: "",
+    icon: <Stethoscope/>,
   },
 
   {
@@ -26,7 +27,7 @@ const steps = [
     description:
       "Your authentic Zepbound KwikPen ships from a U.S. pharmacy with cold-chain packaging — plus comfort meds in your first order.",
     badge: "1–2 days",
-    icon: "",
+    icon: <Box/>,
   },
 ];
 

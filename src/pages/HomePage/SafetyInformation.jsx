@@ -29,7 +29,10 @@ const SafetyInformation = () => {
             </p>
 
             <h2 className="text-[#001A57] text-3xl md:text-5xl font-bold mt-3 leading-tight">
-              Zepbound® (tirzepatide) injection
+              Zepbound
+                <sup className="text-xl md:text-2xl align-top relative -top-1 ml-0">
+                ®
+              </sup> (tirzepatide) injection
             </h2>
 
           </div>
